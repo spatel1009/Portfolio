@@ -8,6 +8,10 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new
   end
 
+  def java
+    @java_portfolio_items = Portfolio.java
+  end
+
   def create
     @portfolio_item = Portfolio.create(portfolio_params)
       if @portfolio_item.save
