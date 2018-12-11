@@ -4,5 +4,7 @@
   <p><%= pi.title %></p>
   <p><%= pi.subtitle %></p>
   <p><%= pi.body %></p>
-  <p><%= image_tag pi.thumb_image %></p>
+  <% if pi.thumb_image? %>
+    <p><%= image_tag pi.thumb_image %></p>
+  <% end %>
 <% end %>
