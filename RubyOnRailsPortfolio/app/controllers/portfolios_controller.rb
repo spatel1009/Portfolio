@@ -13,7 +13,7 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.save
         redirect_to portfolios_path, notice: 'Your portfolio item was created!'
       else
-        render 'new'
+        render :new
       end
   end
 
@@ -24,16 +24,20 @@ class PortfoliosController < ApplicationController
   end
 
   def update
-      if @portfolio_item.update(portfolio_params)
-        redirect_to portfolios_path, notice: 'Your portfolio item was edited!'
-      else
-        render 'new'
-      end
+    if @portfolio_item.update(portfolio_params)
+      redirect_to portfolios_path, notice: 'Your portfolio item was edited!'
+    else
+      render :new
+    end
   end
 
-  
-
-
+  def destroy
+    if @portfolio_item.destroy
+      redirect_to portfolios_path, notice: 'Portfolio was successfully destroyed!'
+    else
+      render :new
+    end
+  end
 
   private
 
