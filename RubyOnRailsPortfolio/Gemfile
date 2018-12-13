@@ -33,6 +33,7 @@ gem 'pry'
 gem 'ostruct'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'sohel_view_tool', git: 'https://github.com/spatel1009/sohel_view_tool'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
