@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'java', to: 'portfolios#java'
   
   get 'about', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
+  get 'resume', to: 'pages#resume'
 
   resources :blogs do
     member do
