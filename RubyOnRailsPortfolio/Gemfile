@@ -31,6 +31,8 @@ gem 'devise'
 # gem 'mini_magick', '~> 4.8'
 gem 'pry'
 gem 'ostruct'
+gem 'bootstrap'
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
