@@ -14,18 +14,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <%= render 'shared/navbar', location: 'top' %> 
-
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    
-    <%= login_helper %>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-    <%= yield %>
+      <%= render 'shared/application_nav', location: 'top' %> 
+      
+      <%= login_helper %>
 
-    <%= source_helper %>
+      <%= yield %>
 
-    <%= copyright_generator %>
+      <%= copyright_generator %>
+
+      <%= source_helper %>
+    </div>
   </body>
 </html>
