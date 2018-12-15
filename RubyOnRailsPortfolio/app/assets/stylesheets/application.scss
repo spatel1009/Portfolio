@@ -54,7 +54,7 @@ body {
 }
 
 .masthead-brand {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .nav-masthead .nav-link {
@@ -77,6 +77,19 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.sohelpic {
+  border-radius: 50%;
+  max-height: 50%;
+  max-width: 35%;
+  padding-bottom: 15px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 48em) {

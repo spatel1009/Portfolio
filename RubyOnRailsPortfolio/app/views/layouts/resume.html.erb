@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title %> </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= stylesheet_link_tag    'orbit-1', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+          <%= link_to "Home", root_path, class: 'nav-link' %>
+          <%= link_to "About", about_path, class: 'nav-link' %>
+          <%= link_to "Resume", resume_path, class: 'nav-link active' %>  
+          <%= link_to "Blog", blogs_path, class: 'nav-link' %>  
+          <%= link_to "Portfolio", portfolios_path, class: 'nav-link' %>
+        </nav>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <%= source_helper %>
+  </body>
+</html>
