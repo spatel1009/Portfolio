@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
+.cover-container {
+  max-width: 75em;
+}
+
 :root {
   --jumbotron-padding-y: 3rem;
 }
