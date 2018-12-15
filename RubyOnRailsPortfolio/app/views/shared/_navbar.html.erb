@@ -1,7 +1,7 @@
-<div class="<%= location %>">
-  <div><%= link_to "Home", root_path %></div>
-  <div><%= link_to "About", about_path %></div>
-  <div><%= link_to "Resume", resume_path %></div> 
-  <div><%= link_to "Portfolio", portfolios_path %></div> 
-  <div><%= link_to "Blog", blogs_path %></div>  
-</div>
+<header class="masthead mb-auto">
+  <div class="inner">
+    <nav class="nav nav-masthead justify-content-center app-nav">
+      <%= nav_helper 'nav-link', 'span' %>
+    </nav>
+  </div>
+</header>
