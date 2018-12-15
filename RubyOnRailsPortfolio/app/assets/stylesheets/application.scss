@@ -42,7 +42,7 @@ body {
 }
 
 .cover-container {
-  max-width: 50em;
+  max-width: 60em;
 }
 
 
@@ -119,4 +119,29 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+* Custom Styles
+*/
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.form-group {
+  padding-left: 15px;
+}
+
+.edith2 {
+  padding-left: 15px;
+}
+
+.auth-links {
+  padding-bottom: 10px;
+  a {
+    color: black;
+    padding-left: 15px;
+  }
 }
