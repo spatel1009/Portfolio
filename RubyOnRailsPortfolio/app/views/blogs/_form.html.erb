@@ -10,14 +10,28 @@
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <div class='field'>
+    <%= form.label :topic_id %>
+    <%= form.collection_select(:topic_id, Topic.all, :id, :title,
+                              {
+                                include_blank: true
+                              }
+                            ) %>
   </div>
 
   <div class='field'>
-    <%= form.label :topic %>
-    <%= form.text_area :topic %>
+    <%= form.radio_button :status, 'draft' %>
+    <%= form.label :status, 'Draft' %>
+  </div>
+
+  <div class='field'>
+    <%= form.radio_button :status, 'published' %>
+    <%= form.label :status, 'Publish' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
   </div>
 
   <div class="actions">
