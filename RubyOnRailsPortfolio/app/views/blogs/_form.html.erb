@@ -1,7 +1,7 @@
 <%= form_with(model: blog, local: true) do |form| %>
   <% if blog.errors.any? %>
     <% blog.errors.full_messages.each do |e| %>
-      <%= js add_gritter(error, title: 'Sohel Patel Portfolio', sticky: false) %>
+      <%= js add_gritter(e, title: 'Sohel Patel Portfolio', sticky: false) %>
     <% end %>
   <% end %>
 
@@ -13,6 +13,11 @@
   <div class="field">
     <%= form.label :body %>
     <%= form.text_area :body %>
+  </div>
+
+  <div class='field'>
+    <%= form.label :topic %>
+    <%= form.text_area :topic %>
   </div>
 
   <div class="actions">
