@@ -27,6 +27,10 @@ module ApplicationHelper
         title: 'About Me'
       },
       {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
+      {
         url: resume_path,
         title: 'Resume'
       },
