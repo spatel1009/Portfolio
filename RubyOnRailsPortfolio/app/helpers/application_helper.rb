@@ -28,7 +28,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Tech News'
+        title: 'Tech Tweets'
       },
       {
         url: resume_path,
@@ -66,7 +66,5 @@ module ApplicationHelper
   def alert_generator msg
     js add_gritter(msg, title: "Sohel Patel Portfolio", sticky: false)
   end
-
-  
   
 end
